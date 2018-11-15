@@ -23,11 +23,9 @@ class Convert:
         texto = pyt.image_to_string(Image.open(filenameImagem))
 
         os.remove(filenameImagem)
-        
+    
         print(texto)
-
-        imagem = cv2.resize(imagem,None,fx=0.25, fy=0.25, interpolation = cv2.INTER_CUBIC)
-
+        #imagem = cv2.resize(imagem,None,fx=0.25, fy=0.25, interpolation = cv2.INTER_CUBIC)
         #cv2.imshow("imagem contendo o texto", imagem)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
